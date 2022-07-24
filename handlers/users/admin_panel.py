@@ -31,6 +31,8 @@ async def bot_echo(message: types.Message):
 async def bot_echo(message: types.Message):
     kiyim = db.barcha_foydalanuvchilar()
     kiyim_nomi2 = kiyim[-1][0]
+    print(kiyim_nomi2)
 
     await message.answer(text=f'Botdagi azolar soni\n'
                               f'{kiyim_nomi2}')
+        
