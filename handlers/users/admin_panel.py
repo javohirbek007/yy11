@@ -26,7 +26,7 @@ async def bot_echo(message: types.Message):
 
 
 
-@dp.message_handler(text=f'statistika')
+@dp.message_handler(admin(), text=f'statistika')
 
 async def bot_echo(message: types.Message):
     kiyim = db.barcha_foydalanuvchilar()
